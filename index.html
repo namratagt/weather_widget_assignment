@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>weather widget</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav id="side-bar">
+            <div class="prp">
+                <img src="img\outline_add_white_18dp.png">
+
+                <div class="button">
+                    <div class="dash "> </div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <div style="font-size: 0.7rem;"> °C
+                    <div class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </div>
+                    °F
+                </div>
+
+            </div>
+
+            <div class="navig">
+
+                <div class="navtext">New York, USA</div>
+
+                <div class="time">07:19</div>
+                <div class="navtext">Today 28 Sept</div>
+                <div class="time">19:32</div>
+
+            </div>
+
+            <div>
+                <div class="temp"> 27°</div>
+
+                <div class="t3"><img class="t4" src="img\outline_wb_sunny_white_18dp.png">
+                    <div> Sunny </div>
+                    
+                </div>
+                
+            </div>
+            <div id="wrapper"></div>
+            <img id="sideimg" src="img\sidebarimg.png">
+        </nav>
+
+        <div class="container2">
+
+            <p class="t"><b>Welcome Back Isabelle</b><br>Check out today's weather information</p>
+
+            <div id="graph">
+                <div class="text">Upcoming Hours</div>
+                <form >
+                    <input list="weather" name="weather">
+                    <datalist id="weather">
+                        <option value="Humidity">
+                        <option value=" Wind">
+                        <option value="Precipitation">
+                        <option value="Uv Index">
+                        <option value="Feels like">
+                        <option value="Chance of rain">
+                    </datalist>
+                </form>
+
+                <img id="graph-img" src="img\graph.png">
+
+            </div>
+
+            <div class="text t2"> More details of today's weather
+            </div>
+
+            <div id="weather-details">
+
+                <div class="box">
+                    Humidity
+                    <img class="icon" src="img\outline_water_drop_black_18dp.png">
+
+                    <h3 class="card-text"><b>82%</b> bad</h3>
+                    <div class="label">
+                        <p>good</p>
+                        <p> normal</p>
+                        <p> bad</p>
+                    </div>
+
+                    <div class="bar1">
+                        <div id="b1"></div>
+                        <div id="b1"></div>
+                        <div id="b">
+                            <div id="b2"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box">Wind <img class="icon" src="img\outline_air_black_24dp.png">
+                </div>
+                <div class="box">Precipitation <img class="icon" src="img\cloud-showers-heavy-solid.svg">
+                    <div class="t5">1.4 cm</div>
+                    <div id="bar3">
+                        
+                        <div class="b9">
+                            <div id="b10"></div>
+                        </div>
+                        <div class="b9">
+                            <div id="b11"></div>
+                        </div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                        <div class="b9"></div>
+                    </div>
+
+                </div>
+                <div class="box">UV Index <img class="icon" src="img\outline_wb_sunny_black_18dp.png">
+                    <div class="t5">4 medium</div>
+                    <div class="bar2">
+                        <div class="b6">
+                            <div id="b7">
+                            </div>
+                        </div>
+                        <div class="b6">
+                            <div id="b8"></div>
+                        </div>
+                        <div class="b6"></div>
+                        <div class="b6"></div>
+                        <div class="b6"></div>
+                    </div>
+                </div>
+                <div class="box">Feels like <img class="icon" src="img\outline_thermostat_black_18dp.png">
+                    <div class="t5">30°</div>
+                    <div class="b3">
+                        <div id="b4">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">Chance of rain <img class="icon" src="img\cloud-rain-solid.svg">
+                    <div class="t5">42%</div>
+                    <div class="b3">
+                        <div id="b5">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
